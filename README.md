@@ -17,7 +17,7 @@ Fav icon, 16 & 32px versions in one file
 
 favicon.ico
 
-iOS and older Android icons
+#### iOS and older Android icons
 | Size    | File        | Description                                                    |
 |---------|-------------|----------------------------------------------------------------|
 | 152x152 | icon152.png | For iPad with high-resolution Retina display running iOS ≥ 7   |
