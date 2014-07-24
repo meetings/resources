@@ -18,6 +18,8 @@ Fav icon, 16 & 32px versions in one file
 favicon.ico
 
 iOS and older Android icons
+| Size    | File        | Description                                                    |
+|---------|-------------|----------------------------------------------------------------|
 | 152x152 | icon152.png | For iPad with high-resolution Retina display running iOS ≥ 7   |
 | 144x144 | icon144.png | For iPad with high-resolution Retina display running iOS ≤ 6   |
 | 120x120 | icon120.png | For iPhone with high-resolution Retina display running iOS ≥ 7 |
@@ -26,6 +28,8 @@ iOS and older Android icons
 | 57x57   | icon57.png  | For non-Retina iPhone, iPod Touch, and Android 2.1+ devices    |
 
 #### General icons
+| Size    | File        | Description                                                          |
+|---------|-------------|----------------------------------------------------------------------|
 | 228x228 | icon228.png | Opera Coast icon                                                     |
 | 195x195 | icon195.png | Opera Speed Dial icon                                                |
 | 152x152 | icon152.png | iPad retina touch icon (Change for iOS 7: up from 144x144)           |
@@ -46,12 +50,13 @@ facebook meta tags, for when user links this page to fb
 
 IE10 meta tags for win8 start screen tiles and such
 Windows 8 navibutton color is needed: #ffffff
-| 144x144 | icon144.png      |              |
 
-IE11 tiles
-| 70x70   | tile-70.png      |              |
-| 150x150 | tile-150.png     |              |
-| 310x150 | tile-310x150.png | (Wide tile!) |
-| 310x310 | tile-310.png     |              |
+| Size    | File             | Description       |
+|---------|------------------|-------------------|
+| 144x144 | icon144.png      | IE10              |
+| 70x70   | tile-70.png      | IE11              |
+| 150x150 | tile-150.png     | IE11              |
+| 310x150 | tile-310x150.png | IE11 (Wide tile!) |
+| 310x310 | tile-310.png     | IE11              |
 
 ---
