@@ -118,7 +118,14 @@ The easiest way to add fonts is to use [Fontsquirrel webfont generator](http://w
 ### MuseoSans
 Here is a sample include of MuseoSans font. Notice the double definitions that are used for supporting both textual and numeric font weights.
 
-Notice that not all of the formats are needed in every situation. For example iOS app most likely will not render with Internet Explorer, so eot-format is enough.
+| File prefix                  | Font weight  | Decoration |
+|------------------------------|--------------|------------|
+| museosans_300-webfont        | 300 / Normal | Normal     |
+| museosans_300_italic-webfont | 300 / Normal | Italic     |
+| museosans_500-webfont        | 500 / Bold   | Normal     |
+| museosans_500_italic-webfont | 500 / Bold   | Italic     |
+
+Notice also that not all of the formats are needed in every situation. For example iOS app most likely will not render with Internet Explorer, so eot-format is enough.
 
 Remember always to check that the font path is correct (relative to the css file location).
 
@@ -141,7 +148,7 @@ Remember always to check that the font path is correct (relative to the css file
        url('museosans_300-webfont.woff') format('woff'),
        url('museosans_300-webfont.ttf') format('truetype'),
        url('museosans_300-webfont.svg#webfont') format('svg');
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -163,7 +170,7 @@ Remember always to check that the font path is correct (relative to the css file
        url('museosans_300_italic-webfont.woff') format('woff'),
        url('museosans_300_italic-webfont.ttf') format('truetype'),
        url('museosans_300_italic-webfont.svg#webfont') format('svg');
-  font-weight: bold;
+  font-weight: normal;
   font-style: italic;
 }
 
