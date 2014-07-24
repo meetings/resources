@@ -60,7 +60,52 @@ Windows 8 navibutton color is needed: #ffffff
 | 310x310 | tile-310.png     | IE11              |
 
 ---
+## Fonticons
+We use [Icomoon](http://icomoon.io/) generator for creating the used icons in font formats. The CSS from icomoon ican be extended with [FontAwesome](http://fortawesome.github.io/Font-Awesome/) as it has some really nice features.
 
+Normal HTML usage:
+```html
+<!-- Plain icon -->
+<i class="icon icon-meetings"></i>
+
+<!-- With text next to it -->
+<i class="icon icon-add"></i><span>Add new item</span>
+
+<!-- Inside a link -->
+<a href="#add"><i class="icon icon-add"></i><span>Add new item</span></a>
+```
+Notice the ```<span>``` around the following text. This helps if we need to add spacing or other decorations later to links.
+
+### Updating fonticons
+1. Download and unzip the icomoon zip you received from Lotta.
+2. Override icomoon styles on your project css with the style.css from the zip
+3. Override icomoon fonts on your project fonts with the style.css from the zip
+4. Check that your custom FontAwesome extensions did not get overridden
+5. Check that old and new icons work. (A styleguide with all the different icons helps with this.)
+
+### Extending fonticon features
+If more features are wanted from [FontAwesome](http://fortawesome.github.io/Font-Awesome/examples/), they can be added to the sample css like the fixed-width font has been added in example below.
+
+Add this to your project css:
+```css
+/* Font Awesome addition */
+.icon{
+  display: inline-block;
+}
+/* Fixed Width Icons */
+.icon-fw {
+  width: 1.2857142857em;
+  text-align: center;
+}
+```
+Then in html:
+```html
+<i class="icon icon-fw icon-meetings"></i>
+```
+
+Just remember to prefix with ```icon``` instead of the FontAwesome ```fa``` prefix.
+
+---
 ## Fonts
 
 Fonts in this repo should be only ones that are used in multiple projects. (iOS, Android, Desktop, etc.)
