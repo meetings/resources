@@ -60,3 +60,109 @@ Windows 8 navibutton color is needed: #ffffff
 | 310x310 | tile-310.png     | IE11              |
 
 ---
+
+## Fonts
+
+Fonts in this repo should be only ones that are used in multiple projects. (iOS, Android, Desktop, etc.)
+
+Bulletproof syntax for font embedding:
+http://www.paulirish.com/2009/bulletproof-font-face-implementation-syntax/
+
+The easiest way to add fonts is to use [Fontsquirrel webfont generator](http://www.fontsquirrel.com/tools/webfont-generator)
+
+### MuseoSans
+Here is a sample include of MuseoSans font. Notice the double definitions that are used for supporting both textual and numeric font weights.
+
+Notice that not all of the formats are needed in every situation. For example iOS app most likely will not render with Internet Explorer, so eot-format is enough.
+
+Remember always to check that the font path is correct (relative to the css file location).
+
+```css
+/* MuseoSans 300 normal */
+@font-face{
+  font-family: 'Museo Sans';
+  src: url('museosans_300-webfont.eot');
+  src: url('museosans_300-webfont.eot?#iefix') format('embedded-opentype'),
+       url('museosans_300-webfont.woff') format('woff'),
+       url('museosans_300-webfont.ttf') format('truetype'),
+       url('museosans_300-webfont.svg#webfont') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Museo Sans';
+  src: url('museosans_300-webfont.eot');
+  src: url('museosans_300-webfont.eot?#iefix') format('embedded-opentype'),
+       url('museosans_300-webfont.woff') format('woff'),
+       url('museosans_300-webfont.ttf') format('truetype'),
+       url('museosans_300-webfont.svg#webfont') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* MuseoSans 300 italic */
+@font-face{
+  font-family: 'Museo Sans';
+  src: url('museosans_300_italic-webfont.eot');
+  src: url('museosans_300_italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('museosans_300_italic-webfont.woff') format('woff'),
+       url('museosans_300_italic-webfont.ttf') format('truetype'),
+       url('museosans_300_italic-webfont.svg#webfont') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face{
+  font-family: 'Museo Sans';
+  src: url('museosans_300_italic-webfont.eot');
+  src: url('museosans_300_italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('museosans_300_italic-webfont.woff') format('woff'),
+       url('museosans_300_italic-webfont.ttf') format('truetype'),
+       url('museosans_300_italic-webfont.svg#webfont') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* MuseoSans 500 normal */
+@font-face{
+  font-family: 'Museo Sans';
+  src: url('museosans_500-webfont.eot');
+  src: url('museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+       url('museosans_500-webfont.woff') format('woff'),
+       url('museosans_500-webfont.ttf') format('truetype'),
+       url('museosans_500-webfont.svg#webfont') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Museo Sans';
+  src: url('museosans_500-webfont.eot');
+  src: url('museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+       url('museosans_500-webfont.woff') format('woff'),
+       url('museosans_500-webfont.ttf') format('truetype'),
+       url('museosans_500-webfont.svg#webfont') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* MuseoSans 500 italic */
+@font-face{
+  font-family: 'Museo Sans';
+  src: url('museosans_500_italic-webfont.eot');
+  src: url('museosans_500_italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('museosans_500_italic-webfont.woff') format('woff'),
+       url('museosans_500_italic-webfont.ttf') format('truetype'),
+       url('museosans_500_italic-webfont.svg#webfont') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face{
+  font-family: 'Museo Sans';
+  src: url('museosans_500_italic-webfont.eot');
+  src: url('museosans_500_italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('museosans_500_italic-webfont.woff') format('woff'),
+       url('museosans_500_italic-webfont.ttf') format('truetype'),
+       url('museosans_500_italic-webfont.svg#webfont') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+```
