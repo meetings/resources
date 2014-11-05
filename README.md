@@ -20,6 +20,7 @@ favicon.ico
 #### iOS and older Android icons
 | Size    | File        | Description                                                    |
 |---------|-------------|----------------------------------------------------------------|
+| 180x180 | icon180.png | For iPhone 6 and 6+                                            |
 | 152x152 | icon152.png | For iPad with high-resolution Retina display running iOS ≥ 7   |
 | 144x144 | icon144.png | For iPad with high-resolution Retina display running iOS ≤ 6   |
 | 120x120 | icon120.png | For iPhone with high-resolution Retina display running iOS ≥ 7 |
@@ -37,6 +38,7 @@ favicon.ico
 | 128x128 | icon128.png | Chrome Web Store icon                                                |
 | 120x120 | icon120.png | iPhone retina touch icon (Change for iOS 7: up from 114x114)         |
 | 96x96   | icon96.png  | GoogleTV icon                                                        |
+| 87x87   | icon87.png  | iPhone 6 and 6+ settings icon                                        |
 | 76x76   | icon76.png  | iPad mini i& iPad 2 touch icon (Change for iOS 7: up from 72x72)     |
 | 72x72   | icon72.png  | iPad home screen icon                                                |
 | 57x57   | icon57.png  | Standard iOS home screen (iPod Touch, iPhone first generation to 3G) |
@@ -58,6 +60,31 @@ Windows 8 navibutton color is needed: #ffffff
 | 150x150 | tile-150.png     | IE11              |
 | 310x150 | tile-310x150.png | IE11 (Wide tile!) |
 | 310x310 | tile-310.png     | IE11              |
+
+---
+## Startup screens
+Generic Meetin.gs app startupscreens (launch image) for when app is loading.
+
+Startup screens have been created according to these guidelines:
+https://developer.apple.com/library/ios/documentation/userexperience/conceptual/mobilehig/LaunchImages.html
+
+Please notice this:
+**"If you think that following these guidelines will result in a plain, boring launch image, you’re right. Remember, the launch image doesn’t provide you with an opportunity for artistic expression. It’s solely intended to enhance the user’s perception of your app as quick to launch and immediately ready for use."**
+
+| Size       | File                  | Description                                 |
+|------------|-----------------------|---------------------------------------------|
+| 1024x768   | ipad_landscape.png    | iPad 1, iPad 2, iPad mini - landscape       |
+| 2048x1536  | ipad_landscape@2x.png | iPad 3 and up, iPad mini and up - landscape |
+| 768x1024   | ipad_portrait.png     | iPad 1, iPad 2, iPad mini - portrait        |
+| 1536x2048  | ipad_portrait@2x.png  | iPad 3 and up, iPad mini and up - portrait  |
+| 320x480    | iphone3.png           | Original iphones up to 3GS                  |
+| 640x960    | iphone4.png           | iPhone 4 - iphone 4S                        |
+| 640x1136   | iphone5.png           | iPhone 5, 5c, 5S                            |
+| 750x1334   | iphone6.png           | iPhone 6                                    |
+| 1242x2208  | iphone6+.png          | iPhone 6+                                   |
+| 2208x1242  | iphone6+landscape.png | iPhone 6+ landscape mode                    |
+
+
 
 ---
 ## Fonticons
